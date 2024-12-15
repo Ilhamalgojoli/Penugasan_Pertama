@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="icon.png">
+    <title>Belajar HTML</title>
+    <link rel="stylesheet" href="#">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Poppins','Sans-Serif';
+        flex-direction: column;
+      }
+      .container h1{
+        font-size: 64px;
+      }
+      .container{
+        background: white ;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px black;
+        width: 400px;
+        text-align: center;
+      }
+      .container input, .container textarea{
+        width: 90%;
+        padding: 10px;
+        margin : 10px 0;
+        border: 2px solid black;
+      }
+      .container button{
+        width: 100% ;
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border: none;
+        margin-top: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+       .table-container{
+        margin-top: 30px;
+        width: 90%;
+        background: white ;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px black;
+        text-align: center;
+      }
+      table{
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,td {
+        padding:8px;
+        border: 2px solid black ;
+        text-align: center;
+      }
+      th{
+        color: black;
+        background-color: yellow;
+        opacity: 50%;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <p>Nama Tugas</p>
+     <input type="text" placeholder="Masukkan nama Tugas">
+     <p>Deskripsi Tugas</p>
+      <textarea placeholder="Masukkan Deskripsi Tugas"></textarea>
+     <p>Deadline Tugas</p>
+       <input type="date">
+       <button type="submit">Tambahkan
+   </button>
+   </div>
+   <div class="table-container">
+     <h1>Daftar Tugas</h1>
+     <table>
+       <head>
+         <tr>
+           <th>No</th>
+           <th>Nama Tugas</th>
+           <th>Deskripsi Tugas</th>
+         </tr>
+       </head>
+       <tbody>
+         <tr>
+           <td>1</td>
+           <td>Tugas HTML</td>
+           <td>Mempelajari HTML</td>
+         </tr>
+       </tbody>
+     </table>
+   </div>
+</body>
+</html>
