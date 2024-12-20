@@ -12,10 +12,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 150vh;
         margin: 0;
         font-family: 'Poppins','Sans-Serif';
-        flex-direction: column;
+        flex-direction: column; 
+        background-color: gray;
       }
       .container h1{
         font-size: 64px;
@@ -45,28 +46,37 @@
         font-size: 16px;
         cursor: pointer;
       }
+      .table-container button {
+        width: 100% ;
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border: none;
+        margin-top: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .penjelasan{
+        font-size: 15px;
+      }
+      .deadline{
+        font-size: 12px;
+      }
        .table-container{
         margin-top: 30px;
-        width: 90%;
+        width: 350px;
+        height: auto;
         background: white ;
         padding: 30px;
         border-radius: 5px;
         box-shadow: 0 4px 8px black;
         text-align: center;
       }
-      table{
-        width: 100%;
-        border-collapse: collapse;
-      }
-      th,td {
-        padding:8px;
-        border: 2px solid black ;
-        text-align: center;
-      }
-      th{
-        color: black;
-        background-color: yellow;
-        opacity: 50%;
+      .container-tugas{
+        display: grid ;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
       }
     </style>
 </head>
@@ -82,24 +92,31 @@
        <button type="submit">Tambahkan
    </button>
    </div>
+   <div class ="container-tugas">
    <div class="table-container">
-     <h1>Daftar Tugas</h1>
-     <table>
-       <head>
-         <tr>
-           <th>No</th>
-           <th>Nama Tugas</th>
-           <th>Deskripsi Tugas</th>
-         </tr>
-       </head>
-       <tbody>
-         <tr>
-           <td>1</td>
-           <td>Tugas HTML</td>
-           <td>Mempelajari HTML</td>
-         </tr>
-       </tbody>
-     </table>
+      <h3>Belajar HTML dan CSS</h3>
+      <p class ="penjelasan">Mempelajari dasar dasar HTML dan CSS agar dapat membuat website yang menarik</p>
+      <p class = "deadline">Deadline : 2024-12-20</p>
+      <button>Hapus</button>
+   </div>
+    <div class="table-container">
+      <h3>Belajar HTML dan CSS</h3>
+      <p class ="penjelasan">Mempelajari dasar dasar HTML dan CSS agar dapat membuat website yang menarik</p>
+      <p class = "deadline">Deadline : 2024-12-20</p>
+      <button>Hapus</button>
+   </div>
+   <div class="table-container">
+      <h3>Belajar HTML dan CSS</h3>
+      <p class ="penjelasan">Mempelajari dasar dasar HTML dan CSS agar dapat membuat website yang menarik</p>
+      <p class = "deadline">Deadline : 2024-12-20</p>
+      <button>Hapus</button>
+   </div>
+   <div class="table-container">
+      <h3>Belajar HTML dan CSS</h3>
+      <p class ="penjelasan">Mempelajari dasar dasar HTML dan CSS agar dapat membuat website yang menarik</p>
+      <p class = "deadline">Deadline : 2024-12-20</p>
+      <button>Hapus</button>
+   </div>
    </div>
 </body>
 </html>
