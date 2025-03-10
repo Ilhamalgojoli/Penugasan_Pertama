@@ -24,14 +24,23 @@ const addNewData = () => {
         description: newDescription,
         deadline : newDeadline
     };
-        
+
+    let data = JSON.parse(localStorage.getItem("data") || []);
+
     data.push(newData);
-    console.log(data);
+
+    localStorage.setItem("data", JSON.stringify(data));
+
+    document.getElementById("namaTugas").value = "";
+    document.getElementById("deskripsi").value = "";
+    document.getElementById("date").value = "";
+
     showAllData();
 }
 
 function showAllData(){
 
+    let data = JSON.parse(localStorage.getItem("data") || []);
     let listData = "";    
 
     data.forEach((showData, index) => {
@@ -49,11 +58,16 @@ function showAllData(){
 }   
 
 function deleteButton(index){
+
+    let data = JSON.parse(localStorage.getItem("data") || []);
+
     data.splice(index, 1);
+
+    localStorage.setItem("data", JSON.stringify(data));
     showAllData();
 }
 
-showAllData()
+showAllData();
 
 function navigate(page){
     if(page === "edit"){
